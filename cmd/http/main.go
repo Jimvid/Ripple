@@ -15,15 +15,17 @@ func main() {
 		Views: engine,
 	})
 
-    // Images & favicons etc
-    app.Static("/", "./static")
+	// Images & favicons etc
+	app.Static("/", "./assets")
 
-    // Bundled CSS & JS files
-    app.Static("/", "./dist")
+	// non built css, will be removed when we have a build step
+	app.Static("/", "./static")
 
-	// Static pages 
+	// Bundled CSS & JS files
+	app.Static("/", "./dist")
+
+	// Static pages
 	static_pages.New(app)
-
 
 	log.Fatal(app.Listen(":3000"))
 }

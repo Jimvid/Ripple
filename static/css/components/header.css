@@ -1,0 +1,40 @@
+.layout-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.layout-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.layout-header-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout-header-navbar-list {
+  display: flex;
+  gap: var(--size-5);
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  margin-inline: auto;
+  padding: var(--size-2) var(--size-4);
+  font-weight: var(--font-weight-3);
+  font-size: var(--size-1);
+}
+
+.layout-header-left {
+  display: flex;
+  align-items: center;
+  gap: var(--size-5);
+}
+
+.header a {
+  font-size: var(--size-3);
+  color: var(--stone-2);
+}
