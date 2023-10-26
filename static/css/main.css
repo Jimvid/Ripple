@@ -1,0 +1,22 @@
+/* Open props */
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+/* Common components */
+@import "components/common/button.css";
+
+/* Components */
+@import "components/footer.css";
+@import "components/header.css";
+
+/* Basic element styling */
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: var(--indigo-6);
+}
+
