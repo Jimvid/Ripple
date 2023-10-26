@@ -3,53 +3,16 @@
 @import "https://unpkg.com/open-props/normalize.min.css";
 @import "https://unpkg.com/open-props/buttons.min.css";
 
-/* Common components */
-@import "components/common/button.css";
+@import "variables.css";
+@import "base.css";
 
-/* Components */
-@import "components/footer.css";
-@import "components/header.css";
-@import "components/hero.css";
+/* Modules */
+@import "modules/button.css";
+@import "modules/footer.css";
+@import "modules/header.css";
+@import "modules/hero.css";
 
 /* Utility classes */
 @import "util.css";
 
 /* CSS Custom props */
-:root {
-  --max-content-width: calc(1280px + var(--size-fluid-2));
-  --text-shadow-1: 1px 1px 2px var(--gray-4);
-  --text-shadow-2: 1px 1px 2px var(--gray-5);
-  --text-shadow-3: 1px 1px 2px var(--gray-7);
-}
-
-/* Basic element styling */
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  width: 100%;
-  max-width: var(--max-content-width);
-  margin-inline: auto;
-  flex-grow: 1;
-}
-
-li {
-  list-style: none;
-  padding-left: 0;
-}
-
-a {
-  color: var(--indigo-6);
-}
-
-ul {
-  padding: 0;
-}
