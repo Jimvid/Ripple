@@ -1,18 +1,34 @@
-<header class="layout-header header wrapper">
-  <nav class="layout-header-navbar header-navbar">
-    <div class="layout-header-left">
-      <img src="icons/flow.svg" alt="Site logotype" />
-      <ul class="layout-header-navbar-list header-navbar-list">
-        <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
-          <a href="/">Home</a>
-        </li>
-      </ul>
-    </div>
-    <div class="layout-header-right">
-      <img src="icons/flow.svg" alt="Site logotype" />
-    </div>
-  </nav>
+<header class="absolute top-0 left-0 w-full">
+    <nav class="flex justify-between px-6 py-3">
+        <div class="flex gap-4">
+            <img src="icons/flow.svg" alt="Site logotype" />
+            <ul class="flex text-lg font-light gap-4 items-center">
+                <li class="whitespace-nowrap">
+                    <a href="/">Home</a>
+                </li>
+                <li class="whitespace-nowrap">
+                    <a href="/about">Htmx</a>
+                </li>
+                <li class="whitespace-nowrap">
+                    <a href="/about">Fiber</a>
+                </li>
+                <li class="whitespace-nowrap">
+                    <a href="/about">Tailwind</a>
+                </li>
+                <li class="whitespace-nowrap">
+                    <a href="/about">Daisy UI</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex gap-4 items-center">
+            <a
+                class="btn btn-outline"
+                href="https://github.com/Jimvid/css-style-guide"
+                >Style guide</a
+            >
+            <a class="btn btn-outline" href="https://github.com/Jimvid/Ripple"
+                >Github</a
+            >
+        </div>
+    </nav>
 </header>

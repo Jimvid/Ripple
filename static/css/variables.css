@@ -1,6 +1,0 @@
-:root {
-  --max-content-width: calc(1280px + var(--size-fluid-2));
-  --text-shadow-1: 1px 1px 2px var(--gray-4);
-  --text-shadow-2: 1px 1px 2px var(--gray-5);
-  --text-shadow-3: 1px 1px 2px var(--gray-7);
-}

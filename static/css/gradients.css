@@ -1,0 +1,17 @@
+@import 'https://unpkg.com/open-props/gradients.min.css';
+
+.gradient-1 {
+    background-image: var(--gradient-9);
+}
+
+.gradient-2 {
+    background-image: var(--gradient-16);
+}
+
+.gradient-3 {
+    background-image: var(--gradient-17);
+}
+
+.gradient-4 {
+    background-image: var(--gradient-19);
+}

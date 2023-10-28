@@ -1,12 +1,15 @@
-<div class="layout-hero hero">
-  <h1 class="hero-title">{{.HeroTitle}}</h1>
-  <p class="hero-paragraph">{{.HeroParagraph}}</p>
-  <div class="layout-hero-buttonList hero-buttonList">
-    <button class="btn-primary">30 + Components</button>
-    <button class="btn-primary">1.000+ Variables</button>
-    <button class="btn-primary">300+ Icons</button>
-    <button class="btn">Auto-layout</button>
-    <button class="btn">Light & dark modes</button>
-    <button class="btn">Interactive components</button>
-  </div>
-</div>
+<section
+    class="w-full h-screen py-16 gradient-2 flex justify-center items-center"
+>
+    <div class="mx-auto max-w-content-small">
+        <h1 class="text-6xl text-center font-bold">{{.HeroTitle}}</h1>
+        <p class="text-lg text-center mb-4 max-w-xl mx-auto">
+            {{.HeroParagraph}}
+        </p>
+        <div class="flex flex-wrap justify-center gap-2 max-w-md mx-auto">
+            {{range .HeroFeatures}}
+            <button class="btn btn-outline btn-neutral">{{.}}</button>
+            {{end}}
+        </div>
+    </div>
+</section>
