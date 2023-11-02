@@ -11,5 +11,32 @@
             <button class="btn btn-outline btn-neutral">{{.}}</button>
             {{end}}
         </div>
+        <div class="flex items-center w-full m-auto justify-center gap-2">
+            <button
+                hx-post="/counter/decrement"
+                class="btn btn-secondary"
+                hx-trigger="click"
+                hx-target="#counter"
+                hx-swap="innerHTML"
+            >
+                -
+            </button>
+            <div
+                id="counter"
+                class="text-6xl font-bold flex justify-center"
+                style="min-width: 120px"
+            >
+                0
+            </div>
+            <button
+                hx-post="/counter/increment"
+                class="btn btn-secondary"
+                hx-trigger="click"
+                hx-target="#counter"
+                hx-swap="innerHTML"
+            >
+                +
+            </button>
+        </div>
     </div>
 </section>
