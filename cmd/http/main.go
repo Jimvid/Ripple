@@ -18,7 +18,7 @@ import (
 
 func main() {
 
-	engine := html.New("./internal/templates", ".html")
+	engine := html.New("./internal/views", ".html")
 
 	env, err := config.LoadEnv()
 

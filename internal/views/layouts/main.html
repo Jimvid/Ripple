@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" data-theme="night">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/gradients.css" />
+        <link rel="stylesheet" href="/css/easings.css" />
+        <link rel="stylesheet" href="/css/animations.css" />
+        <link rel="stylesheet" href="/css/tailwind.css" />
+        <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+
+        <title>{{.Title}}</title>
+    </head>
+    <body>
+        {{template "partials/header" .}}
+        <main>{{embed}}</main>
+        {{template "partials/footer".}}
+    </body>
+</html>
